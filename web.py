@@ -4,7 +4,6 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
 
-
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
     if func is None:
