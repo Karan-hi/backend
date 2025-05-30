@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Compile') {
                         steps {
-                                sh 'sudo python3 test_app.py'
+                                sh 'sudo python3 web.py'
                         }
                 }
                 stage('Test') {
                         steps {
-                                sh 'sudo python3 web.py'
+                                sh 'sudo python3 test_app.py'
                         }
                 }
     }
