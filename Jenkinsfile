@@ -9,15 +9,15 @@ pipeline {
         stage('Compile') {
                         steps {
                                 sh 'sudo python3 web.py'
-                        }
-                }
-                stage('Test') {
+                              }
+                         }    
+                stage('Test')    { 
                         steps {
                                 sh 'sudo python3 test_app.py'
-                        }
-                }
-    }
-}
+                              }
+                                 }
+             }
+          }
 ~                                                                                                                                                              
 ~                                                                                                                                                              
 ~                                                                                                                                                              
